@@ -13,3 +13,4 @@ rl.DrawRectangleRec(text_box, rl.LIGHTGRAY)
 ### And on the output Vec2 of geo.cfc() is diff.
 
 ``` rl.DrawCircleV( geo.cfc(-player.position) , radius, {255, 0, 255, 255})```
+

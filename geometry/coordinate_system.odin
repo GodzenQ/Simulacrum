@@ -20,12 +20,11 @@ cfc :: proc(rl_pos: Vec2) -> Vec2{
 }
 
 // convert_from_cartesian_point
-cfcp :: proc(point: f32, axis: int) -> (result: f32){
-    // if axis = 0 then x else y
+cfcp :: proc(point: f32, axis: int = 0) -> (result: f32){
     Center := center_screen()
-    if axis == 0{ return Center.x/2 - point}
+    if axis == 0{ return Center.x/2 + point}
     else if axis == 1{ return Center.y/2 - point}
-    else { fmt.println("Please only enter 0/1 for x/y axis only.") }
+    else { fmt.println("0|1 => x|y") }
     return 0
 }
 
