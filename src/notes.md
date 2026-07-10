@@ -14,3 +14,11 @@ rl.DrawRectangleRec(text_box, rl.LIGHTGRAY)
 
 ``` rl.DrawCircleV( geo.cfc(-player.position) , radius, {255, 0, 255, 255})```
 
+
+
+# General Structure of games:
+1. init() -> Will do the inital things, asserts.
+2. update() -> updates the state of everything
+3. render() -> Displays on the screenc
+ 
+* Very little will be part of the main proc of the game file 

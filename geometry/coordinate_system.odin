@@ -6,7 +6,6 @@ import "core:fmt"
 Vec2 :: [2]f32
 
 center_screen :: proc() -> Vec2{
-
     return {
         cast(f32)rl.GetScreenWidth(),
         cast(f32)rl.GetScreenHeight()
